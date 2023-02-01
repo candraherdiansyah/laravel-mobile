@@ -14,7 +14,7 @@ class SplashScreen extends StatelessWidget {
     return EasySplashScreen(
       logo: Image.asset('assets/img/pokemonlo.png'),
       title: Text(
-        "Ujkom",
+        "Ujikom",
         style: TextStyle(
             fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
       ),
