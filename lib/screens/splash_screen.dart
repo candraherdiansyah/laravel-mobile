@@ -2,8 +2,9 @@
 
 import 'package:easy_splash_screen/easy_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile/screens/auth/login_screen.dart';
 
-import 'home_screen.dart';
+// import 'home_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -20,7 +21,7 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Colors.blueAccent,
       showLoader: false,
       // loadingText: Text("Loading..."),
-      navigator: HomeScreen(),
+      navigator: LoginScreen(),
       durationInSeconds: 5,
     );
   }
