@@ -21,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
-      autofocus: false,
+      autofocus: true,
       decoration: InputDecoration(
         hintText: 'Email',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
 
     final password = TextFormField(
-      autofocus: false,
+      autofocus: true,
       obscureText: true,
       decoration: InputDecoration(
         hintText: 'Password',
@@ -70,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: ListView(
           shrinkWrap: true,
           padding: EdgeInsets.only(left: 24.0, right: 24.0),
-          children: <Widget>[
+          children: [
             logo,
             SizedBox(height: 48.0),
             email,
